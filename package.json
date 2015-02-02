@@ -1,0 +1,15 @@
+{
+  "name": "kue-example",
+  "version": "0.1.0",
+  "description": "Text",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "varenytskyi",
+  "license": "ISC",
+  "devDependencies": {
+    "async": "^0.9.0",
+    "kue": "^0.8.11"
+  }
+}
