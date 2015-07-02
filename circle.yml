@@ -5,6 +5,6 @@ general:
       - master
 test:
   pre:
-    - ./node_modules/.bin/gulp
+    - ./node_modules/.bin/gulp 'coffee:compile'
   override:
-    - mocha dist/run-tests.js
+    - node_modules/.bin/mocha dist/run-tests.js
