@@ -3,3 +3,8 @@ general:
   branches:
     only:
       - master
+test:
+  pre:
+    - ./node_modules/.bin/gulp
+  override:
+    - mocha dist/run-tests.js
