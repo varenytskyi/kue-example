@@ -1,0 +1,30 @@
+{
+  "name": "knotable-frontend-tests",
+  "version": "0.1.0",
+  "description": "frontend testing suite for knotable",
+  "private": true,
+  "author": {
+    "name": "Richard Barber",
+    "email": "richard@knote.com"
+  },
+  "conributors": [
+    {
+      "name": "eluck",
+      "email": "mail@eluck.me"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.10.0",
+    "npm": ">= 1.0.0"
+  },
+  "dependencies": {
+    "browserstack-webdriver": "^2.41.1",
+    "chai": "^3.0.0",
+    "coffee-script": "^1.9.3",
+    "gulp": "^3.9.0",
+    "gulp-coffee": "^2.3.1",
+    "gulp-util": "^3.0.6",
+    "gulp-watch": "^4.2.4",
+    "mocha": "^2.2.5"
+  }
+}
