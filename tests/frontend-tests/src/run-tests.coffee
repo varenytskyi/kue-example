@@ -22,5 +22,11 @@ test.describe 'Test staging login', ->
       @driver.getTitle().then (title) -> 'Dashboard' == title
     ), 10000
 
+  test.it 'Should throw an error', ->
+    @driver.get 'http://staging.knotable.com'
+    @driver.wait (=>
+      @driver.getTitle().then (title) -> 'Just a test title' == title
+    ), 1000
+
   test.after ->
     @driver.quit()
