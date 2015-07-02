@@ -3,8 +3,9 @@ general:
   branches:
     only:
       - master
-test:
-  pre:
+dependencies:
+  post:
     - ./node_modules/.bin/gulp 'coffee:compile'
+test:
   override:
     - node_modules/.bin/mocha dist/run-tests.js
